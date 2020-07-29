@@ -1,32 +1,97 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
-
 .container-fluid {
     background: rgb(12,12,12);
-    height: 200px;
+    height: 250px;
     display: flex;
 }
 
 .container-fluid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
+    font-weight: 800;
     border-radius: 10px;
-    background-color: rgb(20,20,20);
-    font-size: 5rem;
+    font-size: 8rem;
     color: white;
-    height: 80%;
-    width: 100px;
+    height: 70%;
+    width: 140px;
     padding: 10px;
-    margin: 10px;
+    margin: 40px 20px;
+}
+
+.yellow {
+    background: yellow;
+}
+.yellowgreen {
+    background: yellowgreen;
+}
+.violet {
+    background: violet;
+}
+.red {
+    background: red;
+}
+.green {
+    background: green;
+}
+.purple {
+    background: purple;
+}
+.blue {
+    background: blue;
+}
+.orange {
+    background: orange;
+}
+
+.pulsate-yellow {
+    background: yellow;
+    animation: pulsate 1s linear;
+    animation-iteration-count: infinite;
+}
+.pulsate-yellowgreen {
+    background: yellowgreen;
+    animation: pulsate 1s linear;
+    animation-iteration-count: infinite;
+}
+.pulsate-violet {
+    background: violet;
+    animation: pulsate 1s linear;
+    animation-iteration-count: infinite;
+}
+.pulsate-red {
+    background: red;
+    animation: pulsate 1s linear;
+    animation-iteration-count: infinite;
+}
+.pulsate-green {
+    background: green;
+    animation: pulsate 1s linear;
+    animation-iteration-count: infinite;
+}
+.pulsate-purple {
+    background: purple;
+    animation: pulsate 1s linear;
+    animation-iteration-count: infinite;
+}
+.pulsate-blue {
+    background: blue;
+    animation: pulsate 1s linear;
+    animation-iteration-count: infinite;
+}
+.pulsate-orange {
+    background: orange;
+    animation: pulsate 1s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulsate {
+    0% { 
+        font-size: 7rem;
+    }
+    100% { 
+        font-size: 11rem;
+    }
 }
