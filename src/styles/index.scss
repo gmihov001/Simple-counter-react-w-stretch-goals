@@ -11,3 +11,22 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.container-fluid {
+    background: rgb(12,12,12);
+    height: 200px;
+    display: flex;
+}
+
+.container-fluid div {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    border-radius: 10px;
+    background-color: rgb(20,20,20);
+    font-size: 5rem;
+    color: white;
+    height: 80%;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
