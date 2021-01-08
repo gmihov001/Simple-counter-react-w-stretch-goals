@@ -20,15 +20,21 @@ const setCounter = number => {
 	counter = number;
 };
 
+const setRun = () => {
+	run = !run;
+};
+
 var myTimer = () => {
 	console.log(counter);
-	counter += 1;
+	if (run) counter += 1;
 	seconds = "000000" + counter;
 	seconds = seconds.slice(-6);
 	console.log(seconds);
 
 	ReactDOM.render(
 		<Home
+			run={run}
+			setRun={setRun}
 			setCounter={setCounter}
 			num1={seconds.charAt(0)}
 			num2={seconds.charAt(1)}
@@ -41,8 +47,4 @@ var myTimer = () => {
 	);
 };
 
-var myInterval = setInterval(myTimer, 1000);
-
-const stop = () => {
-	clearInterval(myInterval);
-};
+setInterval(myTimer, 1000);

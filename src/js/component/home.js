@@ -41,8 +41,8 @@ export function Home(props) {
 				</div>
 				<div
 					className="btn btn-large btn-warning ml-3 px-5"
-					onClick={() => props.setCounter(0)}>
-					Stop
+					onClick={() => props.setRun()}>
+					{props.run ? "Stop" : "Run"}
 				</div>
 			</div>
 			<div className="container-fluid main-frame justify-content-center text-center mt-5">
@@ -51,7 +51,7 @@ export function Home(props) {
 				</div>
 				<div
 					className={
-						props.num1 != 0
+						props.num1 != 0 && props.run
 							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
 							: style[Math.floor(Math.random() * 8)]
 					}>
@@ -59,7 +59,7 @@ export function Home(props) {
 				</div>
 				<div
 					className={
-						props.num2 != 0
+						props.num2 != 0 && props.run
 							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
 							: style[Math.floor(Math.random() * 8)]
 					}>
@@ -67,7 +67,7 @@ export function Home(props) {
 				</div>
 				<div
 					className={
-						props.num3 != 0
+						props.num3 != 0 && props.run
 							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
 							: style[Math.floor(Math.random() * 8)]
 					}>
@@ -75,7 +75,7 @@ export function Home(props) {
 				</div>
 				<div
 					className={
-						props.num4 != 0
+						props.num4 != 0 && props.run
 							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
 							: style[Math.floor(Math.random() * 8)]
 					}>
@@ -83,7 +83,7 @@ export function Home(props) {
 				</div>
 				<div
 					className={
-						props.num5 != 0
+						props.num5 != 0 && props.run
 							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
 							: style[Math.floor(Math.random() * 8)]
 					}>
@@ -91,7 +91,7 @@ export function Home(props) {
 				</div>
 				<div
 					className={
-						props.num6 != 0
+						props.num6 != 0 && props.run
 							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
 							: style[Math.floor(Math.random() * 8)]
 					}>
@@ -103,6 +103,8 @@ export function Home(props) {
 }
 
 Home.propTypes = {
+	setRun: PropTypes.func,
+	run: PropTypes.bool,
 	setCounter: PropTypes.func,
 	num1: PropTypes.string,
 	num2: PropTypes.string,
