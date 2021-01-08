@@ -35,9 +35,14 @@ export function Home(props) {
 					Set
 				</div>
 				<div
-					className="btn btn-large btn-danger ml-5 px-5"
+					className="btn btn-large btn-danger ml-3 px-5"
 					onClick={() => props.setCounter(0)}>
 					Reset
+				</div>
+				<div
+					className="btn btn-large btn-warning ml-3 px-5"
+					onClick={() => props.setCounter(0)}>
+					Stop
 				</div>
 			</div>
 			<div className="container-fluid main-frame justify-content-center text-center mt-5">

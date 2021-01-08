@@ -41,4 +41,8 @@ var myTimer = () => {
 	);
 };
 
-var setInterval = setInterval(myTimer, 1000);
+var myInterval = setInterval(myTimer, 1000);
+
+const stop = () => {
+	clearInterval(myInterval);
+};
