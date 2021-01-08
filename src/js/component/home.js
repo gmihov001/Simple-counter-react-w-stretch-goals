@@ -34,6 +34,11 @@ export function Home(props) {
 					onClick={() => props.setCounter(parseInt(number))}>
 					Set
 				</div>
+				<div
+					className="btn btn-large btn-danger ml-5 px-5"
+					onClick={() => props.setCounter(0)}>
+					Reset
+				</div>
 			</div>
 			<div className="container-fluid main-frame justify-content-center text-center mt-5">
 				<div>

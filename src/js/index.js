@@ -14,6 +14,7 @@ import { Home } from "./component/home.js";
 //render your react application
 var counter = 0;
 var seconds;
+var run = true;
 
 const setCounter = number => {
 	counter = number;
@@ -40,4 +41,4 @@ var myTimer = () => {
 	);
 };
 
-setInterval(myTimer, 1000);
+var setInterval = setInterval(myTimer, 1000);
