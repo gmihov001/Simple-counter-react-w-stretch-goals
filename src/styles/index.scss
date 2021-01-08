@@ -45,6 +45,15 @@
 .orange {
     background: orange;
 }
+.orangered {
+    background: orangered;
+}
+.fuchsia {
+    background: fuchsia;
+}
+.lightblue {
+    background: lightblue;
+}
 
 .pulsate-yellow {
     background: yellow;
@@ -83,6 +92,21 @@
 }
 .pulsate-orange {
     background: orange;
+    animation: pulsate 1s linear;
+    animation-iteration-count: infinite;
+}
+.pulsate-orangered {
+    background: orangered;
+    animation: pulsate 1s linear;
+    animation-iteration-count: infinite;
+}
+.pulsate-fuchsia {
+    background: fuchsia;
+    animation: pulsate 1s linear;
+    animation-iteration-count: infinite;
+}
+.pulsate-lightblue {
+    background: lightblue;
     animation: pulsate 1s linear;
     animation-iteration-count: infinite;
 }
