@@ -1,12 +1,12 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-.container-fluid {
+.main-frame {
     background: rgb(12,12,12);
     height: 250px;
     display: flex;
 }
 
-.container-fluid div {
+.main-frame div {
     display: flex;
     align-items: center;
     justify-content: center;

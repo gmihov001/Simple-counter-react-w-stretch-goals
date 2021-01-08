@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,11 +16,20 @@ export function Home(props) {
 		"yellowgreen",
 		"violet"
 	];
+
+	let [number, setNumber] = useState("0");
+	console.log(number);
+
 	return (
 		<>
 			<div className="container-fluid">
 				<div>Pick a starting number</div>
-				<input type="text" id="startNumber" />
+				<input
+					type="text"
+					id="startNumber"
+					onChange={e => (number = e.target.value)}
+				/>
+				<div className="btn btn-success">Set</div>
 			</div>
 			<div className="container-fluid main-frame justify-content-center text-center mt-5">
 				<div>
