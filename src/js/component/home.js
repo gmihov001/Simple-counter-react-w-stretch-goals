@@ -11,8 +11,11 @@ export function Home(props) {
 		"yellow",
 		"green",
 		"purple",
-		"blue",
-		"orange",
+        "blue",
+        "lightblue",
+        "orange",
+        "orangered",
+        "fuchsia",
 		"yellowgreen",
 		"violet"
 	];
@@ -52,48 +55,48 @@ export function Home(props) {
 				<div
 					className={
 						props.num1 != 0 && props.run
-							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
-							: style[Math.floor(Math.random() * 8)]
+							? `pulsate-${style[Math.floor(Math.random() * 11)]}`
+							: style[Math.floor(Math.random() * 11)]
 					}>
 					{props.num1}
 				</div>
 				<div
 					className={
 						props.num2 != 0 && props.run
-							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
-							: style[Math.floor(Math.random() * 8)]
+							? `pulsate-${style[Math.floor(Math.random() * 11)]}`
+							: style[Math.floor(Math.random() * 11)]
 					}>
 					{props.num2}
 				</div>
 				<div
 					className={
 						props.num3 != 0 && props.run
-							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
-							: style[Math.floor(Math.random() * 8)]
+							? `pulsate-${style[Math.floor(Math.random() * 11)]}`
+							: style[Math.floor(Math.random() * 11)]
 					}>
 					{props.num3}
 				</div>
 				<div
 					className={
 						props.num4 != 0 && props.run
-							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
-							: style[Math.floor(Math.random() * 8)]
+							? `pulsate-${style[Math.floor(Math.random() * 11)]}`
+							: style[Math.floor(Math.random() * 11)]
 					}>
 					{props.num4}
 				</div>
 				<div
 					className={
 						props.num5 != 0 && props.run
-							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
-							: style[Math.floor(Math.random() * 8)]
+							? `pulsate-${style[Math.floor(Math.random() * 11)]}`
+							: style[Math.floor(Math.random() * 11)]
 					}>
 					{props.num5}
 				</div>
 				<div
 					className={
 						props.num6 != 0 && props.run
-							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
-							: style[Math.floor(Math.random() * 8)]
+							? `pulsate-${style[Math.floor(Math.random() * 11)]}`
+							: style[Math.floor(Math.random() * 11)]
 					}>
 					{props.num6}
 				</div>
