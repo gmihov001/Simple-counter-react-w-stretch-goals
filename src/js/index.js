@@ -12,9 +12,12 @@ import "../styles/index.scss";
 import { Home } from "./component/home.js";
 
 //render your react application
-
 var counter = 0;
 var seconds;
+
+const setCounter = number => {
+	conter = number;
+};
 
 var myTimer = () => {
 	counter += 1;
@@ -24,6 +27,7 @@ var myTimer = () => {
 
 	ReactDOM.render(
 		<Home
+			setCounter={setCounter}
 			num1={seconds.charAt(0)}
 			num2={seconds.charAt(1)}
 			num3={seconds.charAt(2)}

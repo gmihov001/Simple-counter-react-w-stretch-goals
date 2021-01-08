@@ -27,9 +27,9 @@ export function Home(props) {
 				<input
 					type="text"
 					id="startNumber"
-					onChange={e => (number = e.target.value)}
+					onChange={e => setNumber(e.target.value)}
 				/>
-				<div className="btn btn-success">Set</div>
+				<div className="btn btn-large btn-success ml-5 px-5">Set</div>
 			</div>
 			<div className="container-fluid main-frame justify-content-center text-center mt-5">
 				<div>
@@ -89,6 +89,7 @@ export function Home(props) {
 }
 
 Home.propTypes = {
+	setCounter: PropTypes.func,
 	num1: PropTypes.string,
 	num2: PropTypes.string,
 	num3: PropTypes.string,
