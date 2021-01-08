@@ -29,7 +29,11 @@ export function Home(props) {
 					id="startNumber"
 					onChange={e => setNumber(e.target.value)}
 				/>
-				<div className="btn btn-large btn-success ml-5 px-5">Set</div>
+				<div
+					className="btn btn-large btn-success ml-5 px-5"
+					onClick={() => props.setCounter(number)}>
+					Set
+				</div>
 			</div>
 			<div className="container-fluid main-frame justify-content-center text-center mt-5">
 				<div>
