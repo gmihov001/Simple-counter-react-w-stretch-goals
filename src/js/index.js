@@ -16,10 +16,11 @@ var counter = 0;
 var seconds;
 
 const setCounter = number => {
-	conter = number;
+	counter = number;
 };
 
 var myTimer = () => {
+	console.log(counter);
 	counter += 1;
 	seconds = "000000" + counter;
 	seconds = seconds.slice(-6);

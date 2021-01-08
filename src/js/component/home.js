@@ -31,7 +31,7 @@ export function Home(props) {
 				/>
 				<div
 					className="btn btn-large btn-success ml-5 px-5"
-					onClick={() => props.setCounter(number)}>
+					onClick={() => props.setCounter(parseInt(number))}>
 					Set
 				</div>
 			</div>
