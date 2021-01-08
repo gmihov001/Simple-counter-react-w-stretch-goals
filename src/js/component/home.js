@@ -17,59 +17,65 @@ export function Home(props) {
 		"violet"
 	];
 	return (
-		<div className="container-fluid justify-content-center text-center mt-5">
-			<div>
-				<i className="far fa-clock" />
+		<>
+			<div className="container-fluid">
+				<div>Pick a starting number</div>
+				<input type="text" id="startNumber" />
 			</div>
-			<div
-				className={
-					props.num1 != 0
-						? `pulsate-${style[Math.floor(Math.random() * 8)]}`
-						: style[Math.floor(Math.random() * 8)]
-				}>
-				{props.num1}
+			<div className="container-fluid main-frame justify-content-center text-center mt-5">
+				<div>
+					<i className="far fa-clock" />
+				</div>
+				<div
+					className={
+						props.num1 != 0
+							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
+							: style[Math.floor(Math.random() * 8)]
+					}>
+					{props.num1}
+				</div>
+				<div
+					className={
+						props.num2 != 0
+							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
+							: style[Math.floor(Math.random() * 8)]
+					}>
+					{props.num2}
+				</div>
+				<div
+					className={
+						props.num3 != 0
+							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
+							: style[Math.floor(Math.random() * 8)]
+					}>
+					{props.num3}
+				</div>
+				<div
+					className={
+						props.num4 != 0
+							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
+							: style[Math.floor(Math.random() * 8)]
+					}>
+					{props.num4}
+				</div>
+				<div
+					className={
+						props.num5 != 0
+							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
+							: style[Math.floor(Math.random() * 8)]
+					}>
+					{props.num5}
+				</div>
+				<div
+					className={
+						props.num6 != 0
+							? `pulsate-${style[Math.floor(Math.random() * 8)]}`
+							: style[Math.floor(Math.random() * 8)]
+					}>
+					{props.num6}
+				</div>
 			</div>
-			<div
-				className={
-					props.num2 != 0
-						? `pulsate-${style[Math.floor(Math.random() * 8)]}`
-						: style[Math.floor(Math.random() * 8)]
-				}>
-				{props.num2}
-			</div>
-			<div
-				className={
-					props.num3 != 0
-						? `pulsate-${style[Math.floor(Math.random() * 8)]}`
-						: style[Math.floor(Math.random() * 8)]
-				}>
-				{props.num3}
-			</div>
-			<div
-				className={
-					props.num4 != 0
-						? `pulsate-${style[Math.floor(Math.random() * 8)]}`
-						: style[Math.floor(Math.random() * 8)]
-				}>
-				{props.num4}
-			</div>
-			<div
-				className={
-					props.num5 != 0
-						? `pulsate-${style[Math.floor(Math.random() * 8)]}`
-						: style[Math.floor(Math.random() * 8)]
-				}>
-				{props.num5}
-			</div>
-			<div
-				className={
-					props.num6 != 0
-						? `pulsate-${style[Math.floor(Math.random() * 8)]}`
-						: style[Math.floor(Math.random() * 8)]
-				}>
-				{props.num6}
-			</div>
-		</div>
+		</>
 	);
 }
 
