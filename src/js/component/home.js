@@ -22,7 +22,6 @@ export function Home(props) {
 
 	let [startNumber, setStartNumber] = useState("0");
 	let [stopNumber, setStopNumber] = useState("0");
-	console.log(number);
 
 	return (
 		<>
@@ -56,7 +55,7 @@ export function Home(props) {
 				<input
 					type="text"
 					className="ml-3"
-					id="startNumber"
+					id="stopNumber"
 					onChange={e => setStopNumber(e.target.value)}
 					placeholder="Stop at..."
 				/>

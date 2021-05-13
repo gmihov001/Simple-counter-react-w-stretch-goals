@@ -39,30 +39,33 @@ const checkStopWatch = () => {
 };
 
 var myTimer = () => {
-	console.log(counter);
 	if (run) {
+		if (stopWatch) {
+			checkStopWatch();
+			return null;
+		}
+		console.log(counter);
 		counter += 1;
-		if (stopWatch) checkStopWatch();
-	}
-	seconds = "000000" + counter;
-	seconds = seconds.slice(-6);
-	console.log(seconds);
+		seconds = "000000" + counter;
+		seconds = seconds.slice(-6);
+		console.log(seconds);
 
-	ReactDOM.render(
-		<Home
-			run={run}
-			setRun={setRun}
-			setCounter={setCounter}
-			setStopWatch={setStopWatch}
-			num1={seconds.charAt(0)}
-			num2={seconds.charAt(1)}
-			num3={seconds.charAt(2)}
-			num4={seconds.charAt(3)}
-			num5={seconds.charAt(4)}
-			num6={seconds.charAt(5)}
-		/>,
-		document.querySelector("#app")
-	);
+		ReactDOM.render(
+			<Home
+				run={run}
+				setRun={setRun}
+				setCounter={setCounter}
+				setStopWatch={setStopWatch}
+				num1={seconds.charAt(0)}
+				num2={seconds.charAt(1)}
+				num3={seconds.charAt(2)}
+				num4={seconds.charAt(3)}
+				num5={seconds.charAt(4)}
+				num6={seconds.charAt(5)}
+			/>,
+			document.querySelector("#app")
+		);
+	}
 };
 
-setInterval(myTimer, 1000);
+if (counter != stopWatch) setInterval(myTimer, 1000);
