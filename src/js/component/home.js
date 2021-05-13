@@ -20,7 +20,7 @@ export function Home(props) {
 		"violet"
 	];
 
-	let [number, setNumber] = useState("0");
+	let [startNumber, setStartNumber] = useState("0");
 	console.log(number);
 
 	return (
@@ -29,12 +29,12 @@ export function Home(props) {
 				<input
 					type="text"
 					id="startNumber"
-					onChange={e => setNumber(e.target.value)}
+					onChange={e => setStartNumber(e.target.value)}
 					placeholder="Start from..."
 				/>
 				<div
 					className="btn btn-large btn-success ml-3 px-5"
-					onClick={() => props.setCounter(parseInt(number))}>
+					onClick={() => props.setCounter(parseInt(startNumber))}>
 					Set start
 				</div>
 				<div
@@ -49,14 +49,14 @@ export function Home(props) {
 				</div>
 				<div
 					className="btn btn-large btn-primary ml-3 px-5"
-					onClick={() => props.setStopWatch()}>
+					onClick={() => props.setStopWatch(parseInt(stopNumber))}>
 					Stop at:
 				</div>
 				<input
 					type="text"
 					className="ml-3"
 					id="startNumber"
-					onChange={e => setNumber(e.target.value)}
+					onChange={e => setStopNumber(e.target.value)}
 					placeholder="Stop at..."
 				/>
 			</div>
