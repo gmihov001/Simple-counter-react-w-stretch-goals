@@ -31,6 +31,7 @@ export function Home(props) {
 					type="text"
 					id="startNumber"
 					onChange={e => setNumber(e.target.value)}
+					placeholder="Start from..."
 				/>
 				<div
 					className="btn btn-large btn-success ml-5 px-5"
@@ -52,6 +53,12 @@ export function Home(props) {
 					onClick={() => props.setRun()}>
 					Stop at:
 				</div>
+				<input
+					type="text"
+					id="startNumber"
+					onChange={e => setNumber(e.target.value)}
+					placeholder="Stop at..."
+				/>
 			</div>
 			<div className="container-fluid main-frame justify-content-center text-center mt-5">
 				<div>
