@@ -16,6 +16,7 @@ import { Home } from "./component/home.js";
 var counter = 0;
 var seconds;
 var run = true;
+var stopWatch = false;
 
 //declare function to set 'counter' with user provided starting number
 const setCounter = number => {
@@ -26,9 +27,19 @@ const setRun = () => {
 	run = !run;
 };
 
+const checkStopWatch = (number) => {
+    if(counter == number){
+        run = false;
+        alert("Your time was reached");
+    }
+}
+
 var myTimer = () => {
 	console.log(counter);
-	if (run) counter += 1;
+    if(run) {
+        counter += 1;
+        if(stopWatch) checkStopWatch();
+    }    
 	seconds = "000000" + counter;
 	seconds = seconds.slice(-6);
 	console.log(seconds);
