@@ -42,7 +42,7 @@ var myTimer = () => {
 	if (run) {
 		if (stopWatch) {
 			checkStopWatch();
-			return null;
+			if (!run) return null;
 		}
 		console.log(counter);
 		counter += 1;
