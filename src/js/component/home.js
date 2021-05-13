@@ -25,8 +25,7 @@ export function Home(props) {
 
 	return (
 		<>
-			<div className="container-fluid">
-				<div>Pick a starting number</div>
+			<div className="container-fluid pt-5">
 				<input
 					type="text"
 					id="startNumber"
@@ -34,9 +33,9 @@ export function Home(props) {
 					placeholder="Start from..."
 				/>
 				<div
-					className="btn btn-large btn-success ml-5 px-5"
+					className="btn btn-large btn-success ml-3 px-5"
 					onClick={() => props.setCounter(parseInt(number))}>
-					Set
+					Set start
 				</div>
 				<div
 					className="btn btn-large btn-danger ml-3 px-5"
@@ -55,6 +54,7 @@ export function Home(props) {
 				</div>
 				<input
 					type="text"
+					className="ml-3"
 					id="startNumber"
 					onChange={e => setNumber(e.target.value)}
 					placeholder="Stop at..."
