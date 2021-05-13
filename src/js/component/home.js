@@ -11,11 +11,11 @@ export function Home(props) {
 		"yellow",
 		"green",
 		"purple",
-        "blue",
-        "lightblue",
-        "orange",
-        "orangered",
-        "fuchsia",
+		"blue",
+		"lightblue",
+		"orange",
+		"orangered",
+		"fuchsia",
 		"yellowgreen",
 		"violet"
 	];
@@ -45,7 +45,7 @@ export function Home(props) {
 				<div
 					className="btn btn-large btn-warning ml-3 px-5"
 					onClick={() => props.setRun()}>
-					{props.run ? "Stop" : "Run"}
+					{props.run ? "Stop" : "Resume"}
 				</div>
 			</div>
 			<div className="container-fluid main-frame justify-content-center text-center mt-5">

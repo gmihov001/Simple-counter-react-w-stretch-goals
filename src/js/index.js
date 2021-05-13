@@ -12,10 +12,12 @@ import "../styles/index.scss";
 import { Home } from "./component/home.js";
 
 //render your react application
+
 var counter = 0;
 var seconds;
 var run = true;
 
+//declare function to set 'counter' with user provided starting number
 const setCounter = number => {
 	counter = number;
 };
