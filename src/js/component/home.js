@@ -21,6 +21,7 @@ export function Home(props) {
 	];
 
 	let [startNumber, setStartNumber] = useState("0");
+	let [stopNumber, setStopNumber] = useState("0");
 	console.log(number);
 
 	return (
