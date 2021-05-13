@@ -47,6 +47,11 @@ export function Home(props) {
 					onClick={() => props.setRun()}>
 					{props.run ? "Stop" : "Resume"}
 				</div>
+				<div
+					className="btn btn-large btn-primary ml-3 px-5"
+					onClick={() => props.setRun()}>
+					Stop at:
+				</div>
 			</div>
 			<div className="container-fluid main-frame justify-content-center text-center mt-5">
 				<div>
