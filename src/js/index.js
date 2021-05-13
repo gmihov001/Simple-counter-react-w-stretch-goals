@@ -27,10 +27,12 @@ const setRun = () => {
 	run = !run;
 };
 
-const setStopWatch = () => {};
+const setStopWatch = number => {
+	stopWatch = number;
+};
 
-const checkStopWatch = number => {
-	if (counter == number) {
+const checkStopWatch = () => {
+	if (counter == stopWatch) {
 		run = false;
 		alert("Your time was reached");
 	}
@@ -51,6 +53,7 @@ var myTimer = () => {
 			run={run}
 			setRun={setRun}
 			setCounter={setCounter}
+			setStopWatch={setStopWatch}
 			num1={seconds.charAt(0)}
 			num2={seconds.charAt(1)}
 			num3={seconds.charAt(2)}

@@ -49,7 +49,7 @@ export function Home(props) {
 				</div>
 				<div
 					className="btn btn-large btn-primary ml-3 px-5"
-					onClick={() => props.setRun()}>
+					onClick={() => props.setStopWatch()}>
 					Stop at:
 				</div>
 				<input
